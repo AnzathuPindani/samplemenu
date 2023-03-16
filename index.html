@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bidirectional.css" />
+    <link rel="stylesheet" href="bootstrap.mini.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="portalbasictheme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /*Mega Menu CSS Code*/
+      .megaitem:hover{
+        background-color: #00247d;
+        border-radius:5px ;
+      
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: #fff;
+        text-decoration: none !important;
+      
+      }
+ 
+      .mitem {
+        width: 230px !important;
+      }
+      .miteml {
+        width: 260px !important;
+      }
+      /* menu container */
+      .nav,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+      }
+      .nav {
+        cursor: default;
+        display: inline-block;
+        position: relative;
+        z-index: 500;
+      }
+
+      /* menu list */
+      .nav > li {
+        float: left;
+      }
+
+      /* menu links */
+      .nav > li > a {
+        background: #372f2b;
+        border-left: 1px solid #4b4441;
+        border-right: 1px solid #312a27;
+        color: #fcfcfc;
+        display: block;
+        font-weight: bold;
+        line-height: 3.5;
+        padding: 0 1.25em;
+        position: relative;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+        transition: all 0.3s ease;
+        z-index: 510;
+      }
+      .nav > li > a:focus,
+      .nav > li:hover > a {
+        background: #4b4441;
+      }
+      .nav > li:first-child > a {
+        border-left: none;
+        border-radius: 3px 0 0 3px;
+      }
+      /* menu content */
+      .nav-column {
+        float: left;
+        padding-top: 0.5%;
+        padding-bottom: 1%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        width: 20%;
+      }
+
+      .nav-column a {
+        color: #888;
+        display: block;
+
+        line-height: 1;
+      }
+      /* .nav-column a:hover {
+        color: #2196f3;
+      } */
+      .highlight {
+        color: #2196f3;
+      }
+      /*For Mobile*/
+      @media (max-width: 480px) {
+        .mega-menu {
+          margin-left: 0px !important;
+        }
+        .nav-column{
+          width: 100% !important;
+        }
+        #prop{
+          display: block;
+        }
+        .mitem{
+          width: 100% !important;
+        } 
+      }
+      @media (min-width: 481px) and (max-width: 1000px) {
+        #megal{
+          width: 600px;
+          display:none;
+        }
+        #others{
+          width: 60% !important;
+     
+        }
+        li a:hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+        .nav-column{
+          
+          background-color: #fff;
+          width: 100px !important;
+        }
+        .nav-column li a{
+          color: #00247d !important;
+       
+        }
+        #coun{
+          display: block !important;
+        }
+        #zambian{
+          display: none !important;
+        }
+        #countryy{
+          display: none;
+         
+        }
+        #mobilecounty{
+          display: block !important;
+        }
+        .mega-menu {
+          width: 350px;
+          padding-top:15px ;
+          margin-left: 0px !important;
+          transition: all 0.3s ease 0.15s;
+          background-color: #fff;
+          margin-left: -30px !important; 
+          padding-left: 25px !important;
+          
+        }
+        .megaitem:hover{
+          max-width: 350px
+        }
+        #mega{
+          display: none;
+          background-color: #fff;
+        }
+        .nav-column{
+         width: 170% !important;
+        margin-left: -19px; 
+        }
+        #prop{
+          width: 80% !important;
+          display: block;
+        }
+        #zambia{
+         display: none;
+        }
+        
+        .mitem{
+          width: 600px !important;
+          color: #00247d !important;
+          display: block;
+        }
+        #mproposal{
+          display: none;
+        }
+        #zimclaim{
+          display: none;
+        }
+        #maclaim{
+          display: none;
+        }
+        #con{
+          display: none;
+        }
+        #zamback:{
+          border: none;
+        
+        }
+        #mamback{
+          border: none;
+        }
+         /* .megaitem:hover{
+              padding-right:  100px !important;
+      
+      } */
+      .megaitem{
+             
+              width: 300px;
+      
+      }  
+      .maclaim{
+        color: #00247d !important;
+      }
+      #maclaiml{
+        color: #00247d !important;
+      }
+      #othersmenu{
+        display: block;
+        width: 100% !important;
+      }
+     
+      }
+
+      @media (min-width: 1025px) and (max-width: 1280px){
+        .mega-menu {
+          margin-left: 0px !important;
+          transition: all 0.3s ease 0.15s;
+          
+           visibility: hidden;
+        }
+        .nav-column{
+          width: 100% !important;
+        }
+      }
+      @media (min-width:1025px) {
+        .zamm{
+          display: none;
+        }
+      .mega-menu {
+        background: #28aae1;
+        border: none;
+        border-radius: 0 0 3px 3px;
+        opacity: 0;
+        position: absolute;
+        border-radius: 2px;
+        margin-left: -290px !important;
+        transition: all 0.3s ease 0.15s;
+        visibility: hidden;
+        width: 80%;
+      }
+    
+      li:hover > .mega-menu {
+        opacity: 1;
+        overflow: visible;
+        visibility: visible;
+      }
+    }
+    /* End of Mega Menu Code */
+
+      .dropdown-menu > li > a:focus,
+      .dropdown-menu > li > a:hover {
+        padding: 20px 13px !important;
+        border: none !important;
+      }
+      .dropdown-submenu {
+        position: relative;
+        width: 200px;
+      }
+      .dropdown-submenu .dropdown-menu {
+        top: 0;
+        margin-top: 0px;
+        left: 100%;
+        background-color: #28aae1;
+      }
+      .searchBar {
+        width: 100%;
+        align-items: flex-end;
+        align-content: flex-end;
+      }
+      .navbar-toggler-icon {
+        background-image: url(data:image/svg + xml;charset=utf8,
+        %3CsvgviewBox=0 0 30 30xmlns=http://0 0 0 0.5stroke-width= 2stroke-linecap= roundstroke-miterlimit= 10d= M4 7h22M4 15h22M4 23h22/%3E%3C/svg%3E);
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: 50%/100% 100% no-repeat;
+      }
+      .searchQueryInput {
+        width: 114%;
+        color: #28aae1 !important;
+        text-align: center;
+        outline: none;
+        border: 1.5px #28aae1 solid;
+        border-radius: 1.625rem;
+        height: 25px;
+        font-size: 1.3rem;
+      }
+      #searchQuerySubmit {
+        width: 1rem;
+        height: 1.8rem;
+        margin-left: -2.5rem;
+        background: none;
+        border: none;
+        outline: none;
+      }
+      #searchQuerySubmit:hover {
+        cursor: pointer;
+      }
+      .btn-secondary:disabled,
+      .btn-secondary.disabled {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+      /*Slider Styling*/
+      .carousel {
+        margin: 30px 0;
+        background: #ccc;
+        position: relative;
+      }
+      .carousel:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        height: 60px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        border-radius: 100px / 20px;
+      }
+      .carousel .item {
+        text-align: center;
+        overflow: hidden;
+        height: 200px;
+      }
+      .carousel .item img {
+        max-width: 100%;
+        margin: 0 auto;
+        /* Align slide image horizontally center in Bootstrap v3 */
+      }
+      .carousel .carousel-control {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        margin: auto 0;
+        opacity: 0.8;
+      }
+      .carousel .carousel-control:hover {
+        opacity: 0.9;
+      }
+      .carousel .carousel-control i {
+        font-size: 41px;
+      }
+      .carousel-caption h3,
+      .carousel-caption p {
+        color: #fff;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+        margin-bottom: 20px;
+      }
+      .carousel-caption h3 {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 12px 24px;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      .carousel-caption p {
+        color: #00247d;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      .carousel-action {
+        padding: 10px 0 30px;
+      }
+      .carousel-action .btn {
+        min-height: 34px;
+        border-radius: 0;
+        margin: 3px;
+        min-width: 150px;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+      }
+      .carousel-action .btn-primary {
+        border-color: #000;
+        background: none;
+        color: #000;
+      }
+      .carousel-action .btn-primary:hover {
+        background: #000;
+        color: #fff;
+      }
+      .carousel-action .btn-success {
+        background: #8fc93c;
+        border: none;
+      }
+      .carousel-action .btn-success:hover {
+        background: #28aae1;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin: 20px 6px;
+      }
+      .carousel-indicators li {
+        background: transparent;
+        border: 1px solid #28aae1;
+      }
+      .carousel-indicators li.active {
+        background: #28aae1;
+        border-color: #28aae1;
+      }
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {
+        display: block;
+      }
+      ::-webkit-input-placeholder {
+        /* Edge */
+        color: #28aae1 !important;
+      }
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #28aae1 !important;
+      }
+      ::placeholder {
+        color: #28aae1 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <nav class="navbar">
+      <div
+        class="contain"
+        style="
+          display: flex !important;
+          justify-content: space-between;
+          padding: 0px 64px;
+          padding-top: 20px !important;
+        "
+      >
+        <div class="logo"><img src="/nicomw-logo.png" /></div>
+        <div class="sidnav">
+          <div class="topsec" style="font-size: 13px">
+            <div
+              class="contact"
+              style="
+                color: #28aae1 !important;
+                padding-bottom: 15px;
+                padding-top: 10px;
+              "
+            >
+              <b
+                ><a
+                  href="mailto:customercare@nicomw.com"
+                  style="text-decoration: none; color: #28aae1 !important"
+                  target="_blank"
+                  >customercare@nicomw.com</a
+                ></b
+              >
+              | Call Centre: 323 |
+              <b
+                ><a
+                  href="https://wa.me/+265991323323"
+                  target="_blank"
+                  style="text-decoration: none; color: #28aae1 !important"
+                  >WhatsApp: +265 991 323 323</a
+                ></b
+              >
+              | FAQs
+            </div>
+          </div>
+          <div class="nav">
+            <div class="searchBar" style="padding-left: 60%">
+              <form method="GET" action="/search/">
+                <input
+                  id="q"
+                  type="text"
+                  class="searchQueryInput"
+                  name="q"
+                  placeholder="Search"
+                  value=""
+                  style="color: #28aae1 !important"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="menulist">
+      <div class="wrap">
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links" style="margin-left: 51px">
+          <label for="close-btn" class="btn close-btn"
+            ><span class="m-icon"><img src="/close.png" height="22px" /></span
+          ></label>
+          <li><a href="https://access.nicocustomerportal.com/">Home</a></li>
+
+          <li>
+            <a href="#" class="desktop-item">Life Insurance</a>
+            <input type="checkbox" id="showLife" />
+            <label for="showLife" class="mobile-item">Life Insurance</label>
+            <ul class="drop-menu life" style="width: 270px !important">
+              <li>
+                <a href="https://app.nico-life.com/" target="_blank"
+                  >Life Customer Portal</a
+                >
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="testlife" href="#"
+                  >Forms<span class="caret"></span
+                ></a>
+                <ul
+                  class="dropdown-menu"
+                  style="
+                    display: block;
+                    margin-top: -6px !important;
+                    width: 250px !important;
+                  "
+                >
+               <li onclick='window.location.href="https://access.nicocustomerportal.com/affidavit-of-death/"'>
+            <a href="https://access.nicocustomerportal.com/affidavit-of-death/">Affidavit of Death</a>
+          </li>
+
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/cashplus-document-2017"'>
+            <a href="https://access.nicocustomerportal.com/cashplus-document-2017">CashPlus Document</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/child-saver-policy/"'>
+            <a href="https://access.nicocustomerportal.com/child-saver-policy/">Child Saver Policy</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/child-differed-assurance-proposal/"'>
+            <a href="https://access.nicocustomerportal.com/child-differed-assurance-proposal/">Child Differed Proposal</a>
+          </li>
+
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/death-claim-form/"'>
+            <a href="https://access.nicocustomerportal.com/death-claim-form/">Death Claim</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/employee-standing-order/"'>
+            <a href="https://access.nicocustomerportal.com/employee-standing-order/">Employer Standing Order</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/festival-advance-plan-acknowledgement/"'>
+            <a href="https://access.nicocustomerportal.com/festival-advance-plan-acknowledgement/">Festival Advance Acknowledgement</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/festival-advance-plan-proposal/"'>
+            <a href="https://access.nicocustomerportal.com/festival-advance-plan-proposal/">Festival Advance Proposal</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/guardians-detail-form/"'>
+            <a href="https://access.nicocustomerportal.com/guardians-detail-form/">Guardian Details</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/lost-policy-affidavit/"'>
+            <a href="https://access.nicocustomerportal.com/lost-policy-affidavit/">Lost Policy Affidavit</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/diaspora-funeral-cover/"'>
+            <a href="https://access.nicocustomerportal.com/diaspora-funeral-cover/">Kumudzi Diaspora Cover</a>
+          </li>
+
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/new-policy-application-personal-details/"'>
+            <a href="https://access.nicocustomerportal.com/new-policy-application-personal-details/">Personal Policy Details</a>
+          </li>
+          <li onclick='window.location.href="https://access.nicocustomerportal.com/new-entrants-statement/"'>
+            <a href="https://access.nicocustomerportal.com/new-entrants-statement/">Statement of New Entrants</a>
+          </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="https://nico-life.com/customer-service-charter/"
+                  target="_blank"
+                  >Customer Service Charter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Pensions</a>
+            <input type="checkbox" id="showPension" />
+            <label for="showPension" class="mobile-item">Pensions</label>
+            <ul class="drop-menu pension">
+              <li>
+                <a href="https://npsonline.mw/" target="_blank"
+                  >Pension Customer Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://nico-life.com/customer-service-charter/"
+                  target="_blank"
+                  >Customer Service Charter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!--Mege Menu for Life Insurance-->
+          <li role="menuitem">
+            <a href="#" class="megaitem" onclick="showmemegal()">Life Insurance</a>
+            <div class="mega-menu" aria-hidden="true" role="menu" id="megal">
+             
+                          <div id="malawinl">
+                            <div class="nav-column" style="width: 60% !important">
+                              <h3 style="color:#fff"><a href="#" id="maclaiml" style="color:#fff" onclick="openMClaim()">Forms</a></h3>
+                              <hr>
+                          
+                              <ul>
+                              <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/affidavit-of-death/"'>
+                        <a href="https://access.nicocustomerportal.com/affidavit-of-death/">Affidavit of Death</a>
+                      </li>
+
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/cashplus-document-2017"'>
+                        <a href="https://access.nicocustomerportal.com/cashplus-document-2017">CashPlus Document</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/child-saver-policy/"'>
+                        <a href="https://access.nicocustomerportal.com/child-saver-policy/">Child Saver Policy</a>
+                      </li>
+                      <li  role="menuitem" class="miteml"onclick='window.location.href="https://access.nicocustomerportal.com/child-differed-assurance-proposal/"'>
+                        <a href="https://access.nicocustomerportal.com/child-differed-assurance-proposal/">Child Differed Proposal</a>
+                      </li>
+
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/death-claim-form/"'>
+                        <a href="https://access.nicocustomerportal.com/death-claim-form/">Death Claim</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/employee-standing-order/"'>
+                        <a href="https://access.nicocustomerportal.com/employee-standing-order/">Employer Standing Order</a>
+                      </li>
+                      <li role="menuitem" class="miteml"  onclick='window.location.href="https://access.nicocustomerportal.com/festival-advance-plan-acknowledgement/"'>
+                        <a href="https://access.nicocustomerportal.com/festival-advance-plan-acknowledgement/">Festival Advance Acknowledgement</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/festival-advance-plan-proposal/"'>
+                        <a href="https://access.nicocustomerportal.com/festival-advance-plan-proposal/">Festival Advance Proposal</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/guardians-detail-form/"'>
+                        <a href="https://access.nicocustomerportal.com/guardians-detail-form/">Guardian Details</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/lost-policy-affidavit/"'>
+                        <a href="https://access.nicocustomerportal.com/lost-policy-affidavit/">Lost Policy Affidavit</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/diaspora-funeral-cover/"'>
+                        <a href="https://access.nicocustomerportal.com/diaspora-funeral-cover/">Kumudzi Diaspora Cover</a>
+                      </li>
+
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/new-policy-application-personal-details/"'>
+                        <a href="https://access.nicocustomerportal.com/new-policy-application-personal-details/">Personal Policy Details</a>
+                      </li>
+                      <li role="menuitem" class="miteml" onclick='window.location.href="https://access.nicocustomerportal.com/new-entrants-statement/"'>
+                        <a href="https://access.nicocustomerportal.com/new-entrants-statement/">Statement of New Entrants</a>
+                      </li>
+
+                  </ul>
+                </div>
+              </div>
+           
+              <div id="malawinl">
+                <div class="nav-column" id="others" style="width: 25% ">
+                  <h3 style="color:#fff"><a href="#" id="maclaiml" style="color:#fff">Others</a></h3>
+                  <hr>
+                  <ul id="othersmenu">
+                    <li>
+                      <a
+                        href="https://nico-life.com/customer-service-charter/"
+                        target="_blank"
+                        >Customer Service Charter</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://app.nico-life.com/" target="_blank"
+                        >Life Customer Portal</a
+                      >
+                    </li>
+                  </ul>
+        
+
+                </div>
+              </div>
+            </div>
+          </li>
+        <!---End of Mega Menu Life Insurance-->
+          <!--Mege Menu for General Insurance-->
+          <li role="menuitem">
+            <a href="#" class="megaitem" onclick="showmemega()">General Insurance</a>
+            <div class="mega-menu" aria-hidden="true" role="menu" id="mega">
+              <div class="nav-column">
+                <h3 style="color: #28aae1" id="con">Country</h3>
+              
+                <ul id="countryy">
+                  <li
+                  id="zamback"
+                    role="menuitem"
+                    class="mitem"
+                    style="
+                      background-color: #00247d !important;
+                      color: white !important;
+                      pointer-events: auto;
+                      margin-top: 5px;
+                      margin-bottom: 5px;
+                      width: 100% !important;
+                      border-bottom: 1.7px solid #fff;
+                    "
+                  >
+                    <a
+                      id="zama"
+                      onclick="ShowAndHidedesktop()"
+                      href="#"
+                      style="color: white !important"
+                      >ZAMBIA <span style="float: right">></b></span></a
+                    >
+                  </li>
+              
+                  <li
+                  id="mamback"
+                    role="menuitem"
+                    class="mitem"
+                    style="
+                      pointer-events: auto;
+                      margin-top: 7px;
+                      margin-bottom: 7px;
+                      width: 100% !important;
+                      border-bottom: 1.7px solid #fff;
+                    "
+                  >
+                    <a onclick="ShowAndHideMdesktop()" href="#" id="mama"
+                      >MALAWI<span style="float: right">></span></a
+                    >
+                  </li>
+                </ul>
+                <!---Mobile Screen-->
+                <ul id="mobilecounty" style="display: none;">
+                  <li
+                    id="zamback"
+                    role="menuitem"
+                    class="mitem"
+                    style="
+                      
+                      color: white !important;
+                      pointer-events: auto;
+                      margin-top: 5px;
+                      margin-bottom: 5px;
+                      width: 100% !important;
+                      border-bottom: 1.7px solid #fff;
+                    "
+                  >
+                    <a
+                      id="zama"
+                      onclick="ShowAndHide()"
+                      href="#"
+                      style="color: #00247d !important"
+                    
+                      >Zambia <span id="plusz" style="padding-left: 190px;color: #00247d !important;">+</span><span id="minusz" style="padding-left: 190px;color: #00247d !important;display: none;">-</span></a
+                    >
+                  </li>
+              <!--Zambia Dropdown-->
+              <div id="zambia">
+                <div class="nav-column" style="width: 50%">
+                  <h3 style="color: #00247d !important;padding-left: 20px;"><a href="#" style="color: #00247d !important" onclick="claimzimOpen()">Claims<span id="plusc" style="padding-left: 195px;color: #00247d !important;">+</span><span id="minusc" style="padding-left: 195px;color: #00247d !important;display: none;">-</span></a></h3>
+                  <ul id="zimclaim" style="color: #00247d;padding-left: 28px;">
+                    <li
+                    style="color: #00247d;"
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/all-risk/"'
+                    >
+                      <a
+                      style="color: #00247d !important;"
+                        href="https://access.nicocustomerportal.com/all-risk/"
+                        target="_blank"
+                        >All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                    style="color: #00247d !important;"
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/burglary-claim/"'
+                    >
+                      <a
+                      style="color: #00247d !important;"
+                        href="https://access.nicocustomerportal.com/burglary-claim/"
+                        >Burglary Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/contractors-all-risks/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/contractors-all-risks/"
+                        >Contractors All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      role="menuitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/electronic-eq-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/electronic-eq-claim/"
+                        >Electronic Equipment Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/employers-liability/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/employers-liability/"
+                        >Employers Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/fidelity-guarantee-claim/"
+                        >Fidelity Guarantee Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/fire-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/fire-claim/"
+                        >Fire Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/funeral-insurance/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/funeral-insurance/"
+                        >Funeral Insurance Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/goods-in-transit-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/goods-in-transit-claim/"
+                        >Goods-in-Transit Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/glass-claim/"
+                        >Glass Claim Form</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/livestock-claim/"
+                        >Livestock Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"
+                        >Machinery Breakdown Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/money-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/money-claim/"
+                        >Money Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/motor-accident-report/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                    >
+                      <a
+
+                        href="https://access.nicocustomerportal.com/personal-accident-claim/"
+                        >Personal Accident Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/product-liability-claim/"'
+                    >
+                      <a
+                      style="color: #00247d;"
+                        href="https://access.nicocustomerportal.com/product-liability-claim/"
+                        >Product Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                      style="color: #00247d;"
+                        tabindex="-1"
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem" >
+                      <a
+                      style="color: #00247d;"
+                        href="https://nicogeneral.com/customer-service-charter/"
+                        target="_blank"
+                        tabindex="-1"
+                        >Customer Service Charter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-column" id="prop" style="width: 25% !important">
+                  <h3 style="color: #00247d !important;padding-left: 20px !important;"><a href="#" onclick="propOpen()"  style="color: #00247d !important;padding-left: 20px !important;">Proposal<span id="plusp" style="padding-left: 178px;color: #00247d !important;">+</span><span id="minusp" style="padding-left: 178px;color: #00247d !important;display: none;">-</span></a></h3>
+                  
+                  <ul id="mproposal" style="padding-left: 28px;">
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                   >
+                      <a
+                        href="https://access.nicocustomerportal.com/personal-accident-claim/" style="color: #00247d;padding-left: 20px !important;"
+                        >Personal Accident Claim</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!---End of Zambia Dropdown--->
+                  <li
+                    role="menuitem"
+                    class="mitem"
+                    id="mamback"
+                    style="
+                      pointer-events: auto;
+                      margin-top: 7px;
+                      margin-bottom: 7px;
+                      width: 100% !important;
+                      border-bottom: 1.7px solid #fff;
+                    "
+                  >
+                    <a onclick="ShowAndHideM()" href="#" id="mama" style="color: #00247d !important;"
+                      >Malawi<span id="plusm" style="padding-left: 200px;color: #00247d !important;">+</span><span id="minusm" style="padding-left: 200px;color: #00247d !important;display: none;">-</span></a
+                    >
+                  </li>
+                  <div id="malawi" style="display:none">
+                    <div class="nav-column" style="width: 100% !important">
+                      <h3  style="color: #00247d !important;padding-left: 20px;"><a href="#"  style="color:#00247d" onclick="openMClaim()">Claims<span id="plusmc" style="padding-left: 194px;color: #00247d !important;">+</span><span id="minusmc" style="padding-left: 194px;color: #00247d !important;display: none;">-</span></a></h3>
+                  
+                      <ul id="maclaim" style="color: #00247d;padding-left: 28px;">
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/all-risk/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/all-risk/"
+                            target="_blank"
+                            >All Risks Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/burglary-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/burglary-claim/"
+                            >Burglary Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/contractors-all-risks/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/contractors-all-risks/"
+                            >Contractors All Risks Claim</a
+                          >
+                        </li>
+                        <li
+                          class="mitem"
+                          role="menuitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/electronic-eq-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/electronic-eq-claim/"
+                            >Electronic Equipment Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/employers-liability/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/employers-liability/"
+                            >Employers Liability Claim</a
+                          >
+                        </li>
+                        <li role="menuitem" class="mitem">
+                          <a
+                            href="https://access.nicocustomerportal.com/fidelity-guarantee-claim/"
+                            >Fidelity Guarantee Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/fire-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/fire-claim/"
+                            >Fire Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/funeral-insurance/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/funeral-insurance/"
+                            >Funeral Insurance Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/goods-in-transit-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/goods-in-transit-claim/"
+                            >Goods-in-Transit Claim</a
+                          >
+                        </li>
+                        <li role="menuitem" class="mitem">
+                          <a
+                            href="https://access.nicocustomerportal.com/glass-claim/"
+                            >Glass Claim Form</a
+                          >
+                        </li>
+                        <li role="menuitem" class="mitem">
+                          <a
+                            href="https://access.nicocustomerportal.com/livestock-claim/"
+                            >Livestock Claim</a
+                          >
+                        </li>
+                        <li
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"
+                            >Machinery Breakdown Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/money-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/money-claim/"
+                            >Money Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/motor-accident-report/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/motor-accident-report/"
+                            >Motor Accident Report</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/personal-accident-claim/"
+                            >Personal Accident Claim</a
+                          >
+                        </li>
+                        <li
+                          role="menuitem"
+                          class="mitem"
+                          onclick='window.location.href="https://access.nicocustomerportal.com/product-liability-claim/"'
+                        >
+                          <a
+                            href="https://access.nicocustomerportal.com/product-liability-claim/"
+                            >Product Liability Claim</a
+                          >
+                        </li>
+                        <li role="menuitem" class="mitem">
+                          <a
+                            tabindex="-1"
+                            href="https://access.nicocustomerportal.com/motor-accident-report/"
+                            >Motor Accident Report</a
+                          >
+                        </li>
+                        <li role="menuitem" class="mitem">
+                          <a
+                            href="https://nicogeneral.com/customer-service-charter/"
+                            target="_blank"
+                            tabindex="-1"
+                            >Customer Service Charter</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </ul>
+                <!--End of Mobile Screen-->
+        
+              </div>
+              <div id="zambian">
+                <div class="nav-column" style="width: 50%">
+                  <h3 style="color: #fff"><a href="#" onclick="claimzimOpen()">Claims</a></h3>
+                  <hr>
+                  <ul id="zimclaim">
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/all-risk/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/all-risk/"
+                        target="_blank"
+                        >All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/burglary-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/burglary-claim/"
+                        >Burglary Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/contractors-all-risks/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/contractors-all-risks/"
+                        >Contractors All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      role="menuitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/electronic-eq-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/electronic-eq-claim/"
+                        >Electronic Equipment Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/employers-liability/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/employers-liability/"
+                        >Employers Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/fidelity-guarantee-claim/"
+                        >Fidelity Guarantee Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/fire-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/fire-claim/"
+                        >Fire Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/funeral-insurance/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/funeral-insurance/"
+                        >Funeral Insurance Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/goods-in-transit-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/goods-in-transit-claim/"
+                        >Goods-in-Transit Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/glass-claim/"
+                        >Glass Claim Form</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/livestock-claim/"
+                        >Livestock Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"
+                        >Machinery Breakdown Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/money-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/money-claim/"
+                        >Money Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/motor-accident-report/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/personal-accident-claim/"
+                        >Personal Accident Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/product-liability-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/product-liability-claim/"
+                        >Product Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        tabindex="-1"
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://nicogeneral.com/customer-service-charter/"
+                        target="_blank"
+                        tabindex="-1"
+                        >Customer Service Charter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-column" id="prop" style="width: 25% !important">
+                  <h3 style="color: #fff"><a href="#" onclick="propOpen()">Proposal</a></h3>
+                  <hr>
+                  <ul id="mproposal">
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/personal-accident-claim/"
+                        >Personal Accident Claim</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="malawinl" style="display:none">
+                <div class="nav-column" style="width: 50% !important">
+                  <h3 style="color:#fff"><a href="#" id="maclaim" style="color:#fff" onclick="openMClaim()">Claims</a></h3>
+                  <hr>
+              
+                  <ul id="maclaim">
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/all-risk/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/all-risk/"
+                        target="_blank"
+                        >All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/burglary-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/burglary-claim/"
+                        >Burglary Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/contractors-all-risks/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/contractors-all-risks/"
+                        >Contractors All Risks Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      role="menuitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/electronic-eq-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/electronic-eq-claim/"
+                        >Electronic Equipment Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/employers-liability/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/employers-liability/"
+                        >Employers Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/fidelity-guarantee-claim/"
+                        >Fidelity Guarantee Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/fire-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/fire-claim/"
+                        >Fire Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/funeral-insurance/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/funeral-insurance/"
+                        >Funeral Insurance Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/goods-in-transit-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/goods-in-transit-claim/"
+                        >Goods-in-Transit Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/glass-claim/"
+                        >Glass Claim Form</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://access.nicocustomerportal.com/livestock-claim/"
+                        >Livestock Claim</a
+                      >
+                    </li>
+                    <li
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/machinery-breakdown-claim/"
+                        >Machinery Breakdown Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/money-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/money-claim/"
+                        >Money Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/motor-accident-report/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/personal-accident-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/personal-accident-claim/"
+                        >Personal Accident Claim</a
+                      >
+                    </li>
+                    <li
+                      role="menuitem"
+                      class="mitem"
+                      onclick='window.location.href="https://access.nicocustomerportal.com/product-liability-claim/"'
+                    >
+                      <a
+                        href="https://access.nicocustomerportal.com/product-liability-claim/"
+                        >Product Liability Claim</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        tabindex="-1"
+                        href="https://access.nicocustomerportal.com/motor-accident-report/"
+                        >Motor Accident Report</a
+                      >
+                    </li>
+                    <li role="menuitem" class="mitem">
+                      <a
+                        href="https://nicogeneral.com/customer-service-charter/"
+                        target="_blank"
+                        tabindex="-1"
+                        >Customer Service Charter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        <!---End of Mega Menu-->
+
+
+
+
+          <!---Assets-->
+          <li>
+            <a href="#" class="desktop-item">Asset Management</a>
+            <input type="checkbox" id="showAsset" />
+            <label for="showAsset" class="mobile-item">Asset Management</label>
+            <ul class="drop-menu asset">
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/naml-corporate-account-opening/"'
+              >
+                <a
+                  href="https://access.nicocustomerportal.com/naml-corporate-account-opening/"
+                  >Corporate Account Form</a
+                >
+              </li>
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/individual-account/"'
+              >
+                <a
+                  href="https://access.nicocustomerportal.com/individual-account/"
+                  >Individual Account Form</a
+                >
+              </li>
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/joint-account-opening/"'
+              >
+                <a
+                  href="https://access.nicocustomerportal.com/joint-account-opening/"
+                  >Joint Account Form</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://nicoassetmanagers.com/customer-service-charter/"
+                  target="_blank"
+                  >Customer Service Charter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!--End of Assets-->
+          <!---Bank-->
+          <li>
+            <a href="#" class="desktop-item">Banking</a>
+            <input type="checkbox" id="showNbs" />
+            <label for="showNbs" class="mobile-item">Banking</label>
+            <ul class="drop-menu nbs">
+              <li>
+                <a
+                  href="https://nbsib.mw/processOnline/login.seam?cid=10295"
+                  target="_blank"
+                  >Internet Banking</a
+                >
+              </li>
+              <li class="dropdown-submenu">
+                <a class="testbank" href="#"
+                  >Forms<span class="caret"></span
+                ></a>
+                <ul
+                  class="dropdown-menu"
+                  style="
+                    display: block;
+                    margin-top: -6px !important;
+                    width: 250px !important;
+                  "
+                >
+                  <li
+                    onclick='window.location.href="https://access.nicocustomerportal.com/individual-joint-form/"'
+                  >
+                    <a
+                      href="https://access.nicocustomerportal.com/individual-joint-form/"
+                      >Individual/Joint Final</a
+                    >
+                  </li>
+                  <li
+                    onclick='window.location.href="https://access.nicocustomerportal.com/joint-account-sec-holder-details/"'
+                  >
+                    <a
+                      href="https://access.nicocustomerportal.com/joint-account-sec-holder-details/"
+                      >Account Second Holder</a
+                    >
+                  </li>
+                  <li
+                  onclick="window.open('https://nbsihub.mw/loan-application/' + location.search)"
+                  >
+                    <a
+                      href="https://nbsihub.mw/loan-application/"
+                      target="_blank"
+                      >Loan Application</a
+                    >
+                  </li>
+                  
+                  <li
+                    onclick='window.location.href="https://access.nicocustomerportal.com/retained-benefits-withdrawal-application/"'
+                  >
+                    <a
+                      href="https://access.nicocustomerportal.com/retained-benefits-withdrawal-application/"
+                      >Retained Benefits Withdraw</a
+                    >
+                  </li>
+                  <li
+                    onclick='window.location.href="https://access.nicocustomerportal.com/legal-entities-final-form/"'
+                  >
+                    <a
+                      href="https://access.nicocustomerportal.com/legal-entities-final-form/"
+                      >Legal Entities Final Form</a
+                    >
+                  </li>
+                  <li
+                    onclick='window.location.href="https://access.nicocustomerportal.com/sole-proprietor-form/"'
+                  >
+                    <a
+                      href="https://access.nicocustomerportal.com/sole-proprietor-form/"
+                      >Sole Proprietor Form</a
+                    >
+                  </li>
+                  <li
+                    onclick='window.location.href="https://self-onboarding.com/"'
+                  >
+                    <a href="https://self-onboarding.com/" target="_blank"
+                      >Changu Online</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--End of Bank-->
+          <!---Properties-->
+          <li>
+            <a href="#" class="desktop-item">Infrastructure Management</a>
+            <input type="checkbox" id="showEris" />
+            <label for="showEris" class="mobile-item"
+              >Infrastructure Management</label
+            >
+            <ul class="drop-menu eris">
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/tenancy-application/"'
+              >
+                <a
+                  href="https://access.nicocustomerportal.com/tenancy-application/"
+                  >Tenancy Application Form</a
+                >
+              </li>
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/report-incident/"'
+              >
+                <a href="https://access.nicocustomerportal.com/report-incident/"
+                  >Report Incident Form</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://nicoassetmanagers.com/customer-service-charter/"
+                  target="_blank"
+                  >Customer Service Charter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!--End of Property-->
+          <!---Technology-->
+          <li>
+            <a href="#" class="desktop-item">Technology</a>
+            <input type="checkbox" id="showEris" />
+            <label for="showEris" class="mobile-item">Technology</label>
+            <ul class="drop-menu eris">
+              <li
+                onclick='window.location.href="https://access.nicocustomerportal.com/request-quotation/"'
+              >
+                <a
+                  href="https://access.nicocustomerportal.com/request-quotation/"
+                  >Get Cards Quotation</a
+                >
+              </li>
+              <li
+                onclick='window.location.href="https://www.catalogue.nicotechnologies.com/"'
+              >
+                <a
+                  href="https://www.catalogue.nicotechnologies.com/"
+                  target="_blank"
+                  >Product Catalogue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://nicoassetmanagers.com/customer-service-charter/"
+                  target="_blank"
+                  >Customer Service Charter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!--End of Technology-->
+
+          <li>
+            <a href="https://access.nicocustomerportal.com/ekyc/">KYC</a>
+          </li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><img src="/menu.png" height="22px"
+        /></label>
+      </div>
+    </div>
+    <!---Begining of Javascript functions for Mega Menu--->
+    <script>
+      function openMClaim(){
+        var plusc = document.getElementById("plusmc");
+        var minusc = document.getElementById("minusmc");
+        var megclaim=document.getElementById('maclaim');
+        if (megclaim.style.display == "none") {
+          minusc.style.display="inline";
+         plusc.style.display="none"; 
+          megclaim.style.display="block";}else{
+            minusc.style.display="none";
+         plusc.style.display="inline"; 
+            megclaim.style.display="none";
+        }
+      }
+      function showmemega(){
+        
+        var megam=document.getElementById('mega');
+        if (megam.style.display == "none") {
+          megam.style.display="block";}else{
+            megam.style.display="none";
+        }
+      }
+            function showmemegal(){
+        
+        var megam=document.getElementById('megal');
+        if (megam.style.display == "none") {
+          megam.style.display="block";}else{
+            megam.style.display="none";
+        }
+      }
+     //code snippet that opens claims for zambia
+     function claimzimOpen(){
+      var pluc = document.getElementById("plusc");
+        var minuc = document.getElementById("minusc");
+      var zim=document.getElementById('zimclaim');
+        if (zim.style.display == "none") {
+          minuc.style.display="inline";
+         pluc.style.display="none"; 
+        zim.style.display="block";}else{
+          minuc.style.display="none";
+         pluc.style.display="inline"; 
+          zim.style.display="none";
+        }
+     }
+
+       //code snippet that opens proposal for zambia
+     function propOpen(){
+     // plusp
+      //minusp
+      var pl = document.getElementById("plusp");
+        var mi = document.getElementById("minusp");
+        var prop=document.getElementById('mproposal');
+        if (prop.style.display == "none") {
+          mi.style.display="inline";
+         pl.style.display="none";
+        prop.style.display="block";}else{
+          mi.style.display="none";
+         pl.style.display="inline";
+          prop.style.display="none";
+        }
+     }
+     function ShowAndHid(){
+        var x = document.getElementById("zambi");
+        var z = document.getElementById("zamback");
+        var m = document.getElementById("mamback");
+        var y = document.getElementById("malawi");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (x.style.display == "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+          z.style.background = "white";
+          m.style.background = "none";
+          am.style.color = "#00247d";
+          mam.style.color = "#fff";
+        }
+     }
+      //code snippet that opens zambia dropdown in mobile view
+      function ShowAndHide() {
+        var pluz = document.getElementById("plusz");
+        var minuz = document.getElementById("minusz");
+        var x = document.getElementById("zambia");
+        var z = document.getElementById("zamback");
+        var m = document.getElementById("mamback");
+        var y = document.getElementById("malawi");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (x.style.display == "none") {
+          minuz.style.display="inline";
+         pluz.style.display="none"; 
+          x.style.display = "block";
+          y.style.display = "none";
+          z.style.background = "#00247d";
+          m.style.background = "none";
+          am.style.color = "#00247d";
+          mam.style.color = "#00247d";
+        }else{
+          minuz.style.display="none";
+         pluz.style.display="inline"; 
+          x.style.display = "none";
+        }
+      }
+      //code snippet that opens malawi dropdown in mobile view
+      function ShowAndHideM() {
+        //plusm minusm
+        var plus = document.getElementById("plusm");
+        var minus = document.getElementById("minusm");
+        var z = document.getElementById("zamback");
+        var y = document.getElementById("malawi");
+        var x = document.getElementById("zambia");
+        var rev=document.getElementById("countryy");
+        var m = document.getElementById("mamback");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (y.style.display == "none") {
+         minus.style.display="inline";
+         plus.style.display="none"; 
+          y.style.display = "block";
+          x.style.display = "none";
+          z.style.background = "none";
+          m.style.background = "#00247d";
+          
+          am.style.color = "#00247d";
+          mam.style.color = "#00247d";
+        }else{
+          minus.style.display="none";
+         plus.style.display="inline"; 
+          y.style.display = "none";
+        }
+      }
+      //code snippet that opens zambia dropdown in desktop view
+        function ShowAndHidedesktop() {
+        var x = document.getElementById("zambian");
+  
+        var z = document.getElementById("zamback");
+        var m = document.getElementById("mamback");
+        var y = document.getElementById("malawin");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (x.style.display == "none") {
+          x.style.display = "block";
+     
+          y.style.display = "none";
+          z.style.background = "#00247d";
+          m.style.background = "none";
+          am.style.color = "white";
+          mam.style.color = "#fff";
+        }
+      }
+       //code snippet that opens malawi dropdown in desktop view
+      function ShowAndHideMdesktop() {
+        var z = document.getElementById("zamback");
+        var y = document.getElementById("malawin");
+        var x = document.getElementById("zambian");
+        var m = document.getElementById("mamback");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (y.style.display == "none") {
+          y.style.display = "block";
+          x.style.display = "none";
+          z.style.background = "none";
+          m.style.background = "#00247d";
+          
+          am.style.color = "#fff";
+          mam.style.color = "white";
+        }
+      }
+            function ShowAndHideLdesktop() {
+     
+        var y = document.getElementById("malawinl");
+      
+        var m = document.getElementById("mamback");
+        var am = document.getElementById("zama");
+        var mam = document.getElementById("mama");
+        if (y.style.display == "none") {
+          y.style.display = "block";
+          x.style.display = "none";
+          z.style.background = "none";
+          m.style.background = "#00247d";
+          
+          am.style.color = "#fff";
+          mam.style.color = "white";
+        }
+      }
+      
+    </script>
+    <!---End of Javascript Script for Mega Menu--->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-submenu a.test").on("mouseover", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.tests").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testlife").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testpen").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testassets").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testbank").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testproperty").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testtechnology").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testzam").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      $(document).ready(function () {
+        $(".dropdown-submenu a.testmalawi").on("mouseenter", function (e) {
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
